@@ -70,5 +70,7 @@ ax.set_ylabel("Lap Time")
 ax.legend(loc="best")
 
 
-st.write("")
 st.pyplot(fig)
+
+
+st.text("Developed by Magic Lock")
