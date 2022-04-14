@@ -1,10 +1,14 @@
 import fastf1
 import streamlit as st
+import os 
 from fastf1 import plotting
 from matplotlib import pyplot as plt
 
 
 plotting.setup_mpl()
+
+if not os.path.isdir('.cache'):
+    os.mkdir('.cache')
 fastf1.Cache.enable_cache('.cache')
 
 
